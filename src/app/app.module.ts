@@ -11,6 +11,8 @@ import { PagErrorComponent } from './ejercicios/pag-error/pag-error.component';
 import { MaterialModule } from './angular-material/material/material.module';
 import { FormsModule } from '@angular/forms';
 import { AppHttpModule } from './app-http/app-http.module';
+import { CharacterListCl3Component } from './character-list-cl3/character-list-cl3.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { AppHttpModule } from './app-http/app-http.module';
     Cl3Component,
     SegundoComponent,
     TerceroComponent,
-    PagErrorComponent
+    PagErrorComponent,
+    CharacterListCl3Component
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { AppHttpModule } from './app-http/app-http.module';
     MaterialModule,
     FormsModule,
     AppHttpModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
