@@ -1,0 +1,10 @@
+<div>
+    <label for="horasTrabajadas">Horas Trabajadas:</label>
+    <input type="number" [(ngModel)]="horasTrabajadas" name="horasTrabajadas" required>
+  
+    <button (click)="calcularSalario()">Calcular Salario</button>
+  
+    <div *ngIf="salarioTotal !== undefined">
+      <p>El salario semanal ess: {{ salarioTotal | currency }}</p>
+    </div>
+  </div>

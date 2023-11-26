@@ -1,0 +1,13 @@
+<div>
+    <label for="precioUnitario">Precio Unitario:</label>
+    <input type="number" [(ngModel)]="precioUnitario" name="precioUnitario" required>
+  
+    <label for="cantidadAdquirida">La caantidad Adquirida:</label>
+    <input type="number" [(ngModel)]="cantidadAdquirida" name="cantidadAdquirida" required>
+  
+    <button (click)="calcularPrecioFinal()">Calcular Precio Final</button>
+  
+    <div *ngIf="precioFinal !== undefined">
+      <p>El cliente pagará: {{ precioFinal | currency }}</p>
+    </div>
+  </div>
