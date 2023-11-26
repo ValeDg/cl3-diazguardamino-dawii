@@ -29,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    AppHttpModule
+    AppHttpModule,
     HttpClientModule
   ],
   providers: [],
