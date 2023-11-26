@@ -10,6 +10,7 @@ import { TerceroComponent } from './ejercicios/tercero/tercero.component';
 import { PagErrorComponent } from './ejercicios/pag-error/pag-error.component';
 import { MaterialModule } from './angular-material/material/material.module';
 import { FormsModule } from '@angular/forms';
+import { AppHttpModule } from './app-http/app-http.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    AppHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
